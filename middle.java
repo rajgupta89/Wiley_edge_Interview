@@ -1,26 +1,20 @@
 import java.util.*;
-class Node  
-{  
+class Node{  
 int num;  
 Node next;  
-Node(int n)  
-{  
+Node(int n){  
 this.num = n;  
 this.next = null;  
 }  
 }  
-public class middle  
-{  
-public void findNode(Node n)  
-{  
-if(n == null)   
-{  
+public class middle{  
+public void findNode(Node n){  
+if(n == null){  
 return;  
 }  
 Node slow = n;  
 Node fast = n;  
-while(fast != null && fast.next != null)  
-{  
+while(fast != null && fast.next != null){  
 // fast pointer is taking two steps at a time  
 fast = fast.next.next;  
 // slow pointer is taking one step at a time  
@@ -29,8 +23,7 @@ slow = slow.next;
 System.out.println("The middle node of the linked list is: " + slow.num);  
 }  
 // main method  
-public static void main(String args[])  
-{  
+public static void main(String args[]){  
 // head node of the linked list  
 Node h = new Node(13);  
 // remaining node of the linked list  
