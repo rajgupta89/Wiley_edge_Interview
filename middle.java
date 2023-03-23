@@ -29,7 +29,7 @@ slow = slow.next;
 System.out.println("The middle node of the linked list is: " + slow.num);  
 }  
 // main method  
-public static void main(String argvs[])  
+public static void main(String args[])  
 {  
 // head node of the linked list  
 Node h = new Node(13);  
